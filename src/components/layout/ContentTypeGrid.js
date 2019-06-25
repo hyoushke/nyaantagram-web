@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Grid extends React.Component {
+class ContentTypeGrid extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Grid extends React.Component {
   render()
   {
     return (
-            <div className="Grid">
-              Grid
+            <div className="ContentTypeGrid">
+              ContentTypeGrid
             </div>
           );
   }
 }
 
 
-export default Grid;
+export default ContentTypeGrid;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Gallery extends React.Component {
+class ContentTypeGallery extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Gallery extends React.Component {
   render()
   {
     return (
-            <div className="Gallery">
-              Gallery
+            <div className="ContentTypeGallery">
+              ContentTypeGallery
             </div>
           );
   }
 }
 
 
-export default Gallery;
+export default ContentTypeGallery;

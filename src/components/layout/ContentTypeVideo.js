@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Video extends React.Component {
+class ContentTypeVideo extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Video extends React.Component {
   render()
   {
     return (
-            <div className="Video">
-              Video
+            <div className="ContentTypeVideo">
+              ContentTypeVideo
             </div>
           );
   }
 }
 
 
-export default Video;
+export default ContentTypeVideo;

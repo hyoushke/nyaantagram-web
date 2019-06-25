@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Music extends React.Component {
+class ContentTypeMusic extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Music extends React.Component {
   render()
   {
     return (
-            <div className="Music">
-              Music
+            <div className="ContentTypeMusic">
+              ContentTypeMusic
             </div>
           );
   }
 }
 
 
-export default Music;
+export default ContentTypeMusic;

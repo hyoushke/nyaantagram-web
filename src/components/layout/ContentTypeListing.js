@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Listings extends React.Component {
+class ContentTypeListing extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Listings extends React.Component {
   render()
   {
     return (
-            <div className="Listings">
-              Listings
+            <div className="ContentTypeListing">
+              ContentTypeListing
             </div>
           );
   }
 }
 
 
-export default Listings;
+export default ContentTypeListing;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Message extends React.Component {
+class ContentTypeMessage extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Message extends React.Component {
   render()
   {
     return (
-            <div className="Message">
-              Message
+            <div className="ContentTypeMessage">
+              ContentTypeMessage
             </div>
           );
   }
 }
 
 
-export default Message;
+export default ContentTypeMessage;

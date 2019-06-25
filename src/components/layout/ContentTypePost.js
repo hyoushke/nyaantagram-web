@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Post extends React.Component {
+class ContentTypePost extends React.Component {
 
   constructor(){
     super();
@@ -10,12 +10,12 @@ class Post extends React.Component {
   render()
   {
     return (
-            <div className="Post">
-              Post
+            <div className="ContentTypePost">
+              ContentTypePost
             </div>
           );
   }
 }
 
 
-export default Post;
+export default ContentTypePost;
