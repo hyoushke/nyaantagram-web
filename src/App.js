@@ -9,6 +9,44 @@ import Navigation from './components/layout/Navigation';
 //import './App.css';
 
 function App() {
+
+  let state = {
+    menu: [
+      {
+        id: 1,
+        parent: 0,
+        isparent: 1,
+        name: 'Home',
+        url: '/home',
+        icon: 'home.ico',
+        description: 'This is the home component'
+      },
+      {
+        id: 2,
+        parent: 0,
+        isparent: 1,
+        name: 'Dashboard',
+        url: '/home',
+        icon: 'home.ico',
+        description: 'This is the home component'
+      },
+      {
+        id: 3,
+        parent: 0,
+        isparent: 1,
+        name: 'Contact',
+        url: '/home',
+        icon: 'home.ico',
+        description: 'This is the home component'
+      }
+
+
+
+    ]
+  }
+
+  let menu = state.menu;
+
   return (
 
     <div className="App">
@@ -16,7 +54,7 @@ function App() {
       <Logo></Logo>
       <Navigation></Navigation>
 
-      <Content></Content>
+      <Content menu={menu}></Content>
       <Footer></Footer>
     </div>
   );

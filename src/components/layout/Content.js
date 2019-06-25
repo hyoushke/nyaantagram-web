@@ -1,17 +1,18 @@
 import React from 'react';
-import Card from './Card';
+//import Card from './Card';
 import ContentMenu from './ContentMenu';
 import ContentContainer from './ContentContainer';
 
 import {Grid, Paper} from '@material-ui/core'
 
 
-function Content() {
+function Content(menu) {
+
   return (
 
     <Grid container>
         <Grid item sm>
-            <ContentMenu></ContentMenu>
+            <ContentMenu menu={menu}></ContentMenu>
         </Grid>
         <Grid item sm>
             <ContentContainer></ContentContainer>
