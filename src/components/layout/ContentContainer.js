@@ -3,6 +3,10 @@ import React from 'react';
 
 import {Grid, Paper} from '@material-ui/core'
 import {ContentVideo} from './ContentVideo';
+import {ContentMusic} from './ContentMusic';
+import {ContentReport} from './ContentReport';
+import {ContentGrid} from './ContentGrid';
+import {ContentMessage} from './ContentMessage';
 
 //this is ContentContainre version 1
 //this is not yet component splitting ready
@@ -14,24 +18,24 @@ function ContentContainer() {
 
   const contentTypes = ['contentVideo', 'contentPost', 'contentPlayer', 'contentGrid', 'contentMusicPlayer'];
 
-  const getContentType = (contentType)=> {
+  const getContentType = (contentType, contentData)=> {
 
     switch(contentType)
     {
       case 'contentVideo':
-        return <ContentVideo content={content}></ContentVideo>
+        return <ContentVideo content={contentData}></ContentVideo>
         break;
       case 'contentPost':
-        return <ContentVideo content={content}></ContentVideo>
+        return <ContentPost content={contentData}></ContentPost>
         break;
-      case 'contentPlayer':
-        return <ContentVideo content={content}></ContentVideo>
+      case 'contentMusic':
+        return <ContentMusic content={contentData}></ContentMusic>
         break;
       case 'contentGrid':
-        return <ContentVideo content={content}></ContentVideo>
+        return <ContentGrid content={contentData}></ContentGrid>
         break;
       case 'contentMusicPlayer':
-        return <ContentVideo content={content}></ContentVideo>
+        return <ContentMusic content={content}></ContentMusic>
         break;
 
     }

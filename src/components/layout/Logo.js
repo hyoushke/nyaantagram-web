@@ -1,12 +1,21 @@
 import React from 'react';
 
-function Logo() {
-  return (
+class Logo extends React.Component {
 
-    <div className="Logo">
-      Logo
-    </div>
-    )
+  constructor(){
+    super();
+
+  }
+
+  render()
+  {
+    return (
+            <div className="Logo">
+              Logo
+            </div>
+          );
+  }
 }
+
 
 export default Logo;
