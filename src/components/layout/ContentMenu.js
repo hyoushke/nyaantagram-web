@@ -23,7 +23,12 @@ function ContentMenu(menu) {
 }  );
 
 const listItems = data.map((d) =>
-<span><br />{d.name}</span>
+
+    //<span style={{display: block; clear: both; position: relative; font-weight: bold;}}>
+    <li>
+    <a href="#">{d.name}</a>
+    </li>
+    //</span>
 );
 
 
@@ -31,7 +36,9 @@ return (
 
         
     <Grid container>
+      <ul>
       {listItems}
+      </ul>
     </Grid>
 
     )
