@@ -13,35 +13,38 @@ function loopData(data){
 }
 */
 
-function ContentMenu(menu) {
-  let data = menu.menu.menu;
-  //console.log(data);
+export default class ContentMenu extends React.Component {
 
-  data.map( (d) => {
-    console.log(d.name);
+  constructor(){
+    super();
+    console.log(this.props);
+  }
 
-}  );
 
-const listItems = data.map((d) =>
 
-    //<span style={{display: block; clear: both; position: relative; font-weight: bold;}}>
-    <li>
-    <a href="#">{d.name}</a>
-    </li>
-    //</span>
+
+render()
+{
+  const listItems = this.props.menu.map((d) =>
+
+  //<span style={{display: block; clear: both; position: relative; font-weight: bold;}}>
+  <li>
+  <a href="#">{d.name}</a>
+  </li>
+  //</span>
 );
 
 
 return (
-
-        
-    <Grid container>
+<Grid container>
       <ul>
-      {listItems}
+        {listItems}
       </ul>
     </Grid>
-
-    )
+    );
 }
 
-export default ContentMenu;
+
+}
+
+

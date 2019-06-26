@@ -6,20 +6,28 @@ import ContentContainer from './ContentContainer';
 import {Grid, Paper} from '@material-ui/core'
 
 
-function Content(menu) {
+export default class Content extends React.Component {
 
-  return (
+    constructor(){
+        super();
+        console.log(this.props);
+    }
 
-    <Grid container>
-        <Grid item sm>
-            <ContentMenu menu={menu}></ContentMenu>
+    
+
+    render()
+    {
+    return (
+        <Grid container>
+            <Grid item sm>
+                <ContentMenu menu={this.props.menu}></ContentMenu>
+            </Grid>
+            <Grid item sm>
+                <ContentContainer></ContentContainer>
+            </Grid>
         </Grid>
-        <Grid item sm>
-            <ContentContainer></ContentContainer>
-        </Grid>
-    </Grid>
 
-    )
+        );
+    }
 }
 
-export default Content;
