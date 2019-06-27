@@ -14,6 +14,7 @@ function App() {
     menu: [
       {
         id: 1,
+        key: 1,
         parent: 0,
         isparent: 1,
         name: 'Home',
@@ -23,6 +24,7 @@ function App() {
       },
       {
         id: 2,
+        key: 2,
         parent: 0,
         isparent: 1,
         name: 'Dashboard',
@@ -32,6 +34,7 @@ function App() {
       },
       {
         id: 3,
+        key: 3,
         parent: 0,
         isparent: 1,
         name: 'Contact',

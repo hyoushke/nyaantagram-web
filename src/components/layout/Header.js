@@ -166,6 +166,7 @@ function Header() {
 
 <div className={classes.grow}>
       <AppBar position="static">
+        <input type="text" />
         <Toolbar>
           <IconButton
             edge="start"
