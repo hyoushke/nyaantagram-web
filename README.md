@@ -1,3 +1,8 @@
+<img class="status-badge-image" src="https://dev.azure.com/hyoushke/nyaantagram-web/_apis/build/status/nyaantagram-web-CI?branchName=master&amp;jobName=Ubuntu%201604%20Agent" alt="Example status badge for this pipeline.">
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
